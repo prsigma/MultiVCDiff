@@ -1,0 +1,29 @@
+[[34m2025-09-24 05:06:51[0m] Experiment directory created at results_multimodal/000-DiTMultimodal-XL-2
+[[34m2025-09-24 05:07:26[0m] DiT Parameters: 683,520,450
+[[34m2025-09-24 05:07:26[0m] Beginning epoch 0...
+[[34m2025-09-24 05:07:44[0m] (step=0100010) Train Loss: 1.9372, Train Steps/Sec: 0.55, Img Loss: 0.9161, RNA Loss: 1.0211
+[[34m2025-09-24 05:07:57[0m] (step=0100020) Train Loss: 1.4791, Train Steps/Sec: 0.79, Img Loss: 0.4722, RNA Loss: 1.0069
+Traceback (most recent call last):
+  File "/data/pr/投稿/MultiVCDiff/train.py", line 471, in <module>
+    main(args)
+  File "/data/pr/投稿/MultiVCDiff/train.py", line 351, in main
+    loss.backward()
+  File "/home/pengrui/mambaforge/envs/DiT/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home/pengrui/mambaforge/envs/DiT/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/pengrui/mambaforge/envs/DiT/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/pr/投稿/MultiVCDiff/train.py", line 471, in <module>
+[rank0]:     main(args)
+[rank0]:   File "/data/pr/投稿/MultiVCDiff/train.py", line 351, in main
+[rank0]:     loss.backward()
+[rank0]:   File "/home/pengrui/mambaforge/envs/DiT/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/home/pengrui/mambaforge/envs/DiT/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/home/pengrui/mambaforge/envs/DiT/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]: KeyboardInterrupt

@@ -303,7 +303,7 @@ def main(args):
     running_loss = 0
     running_img_loss = 0
     running_rna_loss = 0
-    train_steps=100000
+    train_steps=0
     start_time = time()
     for epoch in range(args.epochs):
         sampler.set_epoch(epoch)

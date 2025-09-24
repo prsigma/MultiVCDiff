@@ -1,0 +1,103 @@
+{
+  "os": "Linux-5.15.0-140-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.6",
+  "startedAt": "2025-09-24T05:06:50.065587Z",
+  "args": [
+    "--use-multimodal",
+    "--h5ad-path",
+    "/data/pr/DiT_AIVCdiff/pr_tutorial/DiT_input_512_one_image_one_rna.h5ad",
+    "--image-size",
+    "512",
+    "--image-column",
+    "merged_image",
+    "--drug-column",
+    "compound",
+    "--smiles-column",
+    "smiles",
+    "--img-dose-column",
+    "concentration",
+    "--model",
+    "DiTMultimodal-XL/2",
+    "--global-batch-size",
+    "36",
+    "--num-workers",
+    "32",
+    "--lr",
+    "1e-4",
+    "--epochs",
+    "100",
+    "--log-every",
+    "10",
+    "--ckpt-every",
+    "5000",
+    "--img-loss-weight",
+    "1.0",
+    "--rna-loss-weight",
+    "1.0",
+    "--results-dir",
+    "results_multimodal",
+    "--use-wandb",
+    "--wandb-project",
+    "DiT-multimodal-cell-images",
+    "--wandb-run-name",
+    "multimodal_with_smiles_fp"
+  ],
+  "program": "/data/pr/投稿/MultiVCDiff/train.py",
+  "codePath": "train.py",
+  "git": {
+    "commit": "090060497fc390d2b5d3f9698094df11eefcebb8"
+  },
+  "email": "1255013836@qq.com",
+  "root": "/data/pr/投稿/MultiVCDiff",
+  "host": "pkugpu02",
+  "executable": "/home/pengrui/mambaforge/envs/DiT/bin/python3.10",
+  "codePathLocal": "train.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "404830732288",
+      "used": "358713368576"
+    }
+  },
+  "memory": {
+    "total": "540656939008"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-163d0c29-b4f8-6042-de3f-fcefdab8198e"
+    },
+    {
+      "name": "NVIDIA A100 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-37953a4f-016b-c061-15de-0fb0eaf670a4"
+    },
+    {
+      "name": "NVIDIA A100 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-e5efd0d6-a9c0-87ad-fcf5-2d3a65afe72d"
+    },
+    {
+      "name": "NVIDIA A100 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-83440a44-efe9-e150-a421-048f66220f30"
+    }
+  ],
+  "cudaVersion": "12.9"
+}

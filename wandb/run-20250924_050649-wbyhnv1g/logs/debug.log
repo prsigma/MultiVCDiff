@@ -1,0 +1,21 @@
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_setup.py:_flush():81] Configure stats pid to 1740622
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_setup.py:_flush():81] Loading settings from /home/pengrui/.config/wandb/settings
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_setup.py:_flush():81] Loading settings from /data/pr/投稿/MultiVCDiff/wandb/settings
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /data/pr/投稿/MultiVCDiff/wandb/run-20250924_050649-wbyhnv1g/logs/debug.log
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /data/pr/投稿/MultiVCDiff/wandb/run-20250924_050649-wbyhnv1g/logs/debug-internal.log
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_init.py:init():831] calling init triggers
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'data_path': None, 'results_dir': 'results_multimodal', 'model': 'DiTMultimodal-XL/2', 'image_size': 512, 'num_classes': 98, 'epochs': 100, 'global_batch_size': 36, 'global_seed': 0, 'vae': 'ema', 'num_workers': 32, 'log_every': 10, 'ckpt_every': 5000, 'resume_checkpoint': None, 'use_custom_dataset': False, 'metadata_path': '/data/pr/cellpainting/BBBC021/raw_data/metadata/augmented_image_metadata_512.csv', 'lr': 0.0001, 'use_multimodal': True, 'h5ad_path': '/data/pr/DiT_AIVCdiff/pr_tutorial/DiT_input_512_one_image_one_rna.h5ad', 'image_dir': None, 'image_column': 'merged_image', 'drug_column': 'compound', 'img_dose_column': 'concentration', 'smiles_column': 'smiles', 'img_loss_weight': 1.0, 'rna_loss_weight': 1.0, 'use_wandb': True, 'wandb_project': 'DiT-multimodal-cell-images', 'wandb_run_name': 'multimodal_with_smiles_fp', '_wandb': {}}
+2025-09-24 05:06:49,643 INFO    MainThread:1740622 [wandb_init.py:init():872] starting backend
+2025-09-24 05:06:50,060 INFO    MainThread:1740622 [wandb_init.py:init():875] sending inform_init request
+2025-09-24 05:06:50,065 INFO    MainThread:1740622 [wandb_init.py:init():883] backend started and connected
+2025-09-24 05:06:50,066 INFO    MainThread:1740622 [wandb_init.py:init():956] updated telemetry
+2025-09-24 05:06:50,073 INFO    MainThread:1740622 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-09-24 05:06:51,590 INFO    MainThread:1740622 [wandb_init.py:init():1032] starting run threads in backend
+2025-09-24 05:06:51,789 INFO    MainThread:1740622 [wandb_run.py:_console_start():2453] atexit reg
+2025-09-24 05:06:51,789 INFO    MainThread:1740622 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-09-24 05:06:51,790 INFO    MainThread:1740622 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-09-24 05:06:51,790 INFO    MainThread:1740622 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-09-24 05:06:51,793 INFO    MainThread:1740622 [wandb_init.py:init():1078] run started, returning control to user process
