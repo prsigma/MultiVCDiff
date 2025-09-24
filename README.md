@@ -2,13 +2,15 @@
 
 > ✨ A unified multimodal diffusion model for simultaneously generating cellular morphology and transcriptomics under drug perturbations.
 
------
+![Stars](https://img.shields.io/github/stars/prsigma/CellProphet?style=flat-square&color=yellow)
+![Issues](https://img.shields.io/github/issues-raw/prsigma/CellProphet?label=issues&style=flat-square&color=green)
+![License](https://img.shields.io/github/license/prsigma/CellProphet?style=flat-square&color=yellowgreen)
+![Last Commit](https://img.shields.io/github/last-commit/prsigma/CellProphet?label=last%20commit&style=flat-square&color=yellowgreen)
+![Pull Requests](https://img.shields.io/github/issues-pr/prsigma/CellProphet?label=pull%20requests&style=flat-square&color=green)
 
 ## Overview
 
 **MultiVCDiff** is a unified multimodal diffusion model capable of simultaneously generating cellular morphology images and transcriptomic profiles under drug perturbations. By learning the conditional joint distribution of morphology and gene expression, MultiVCDiff achieves a more faithful and robust representation of cellular states than single-modality approaches. Our model not only achieves state-of-the-art fidelity in both image and transcriptomic generation but also demonstrates strong cross-modal coherence and generalizes to unseen drugs. MultiVCDiff represents a critical step toward building practical **AI Virtual Cell (AIVC)** platforms that support high-throughput, reproducible *in silico* experimentation, with significant promise for accelerating drug discovery and repurposing.
-
------
 
 ## Why MultiVCDiff?
 
@@ -21,8 +23,6 @@
 
 ![alt text](image.png)
 
------
-
 ## Quick Links
 
 - [Installation](#installation)
@@ -31,7 +31,6 @@
 - [Todo list](#todo-list)
 - [Contact](#contact)
 
------
 
 ## Installation
 
@@ -51,8 +50,6 @@
 
 **Note**: Please ensure your system has a compatible version of CUDA installed to leverage GPU acceleration for model training.
 
------
-
 ## CPgenes Dataset
 
 To train and evaluate MultiVCDiff, we curated and released **CPgenes**, a standardized trimodal corpus. This dataset contains **44,000 matched samples** across 44 small-molecule perturbations, bridging the L1000 (gene expression) and Cell Painting (morphology) assays.
@@ -62,8 +59,6 @@ To train and evaluate MultiVCDiff, we curated and released **CPgenes**, a standa
   - **Perturbation Data**: Information on the 44 small-molecule drugs used.
 
 The complete dataset, along with preprocessing pipelines, is available for download here: `https://drive.google.com/drive/folders/1nYKfKV_A-g0tXiJwbC7L6trT_WJAF50Y?usp=drive_link`
-
------
 
 ## Training
 
@@ -81,14 +76,10 @@ bash pr_run.sh
 
 Checkpoints will be saved to the `results_multimodal/` directory.
 
------
-
 ## Todo List
 
   - [ ] Upload the inference code.
   - [ ] Provide a detailed tutorial notebook for training, inference, and evaluation.
-
------
 
 ## Contact
 
