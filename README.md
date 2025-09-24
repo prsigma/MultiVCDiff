@@ -2,11 +2,11 @@
 
 > ✨ A unified multimodal diffusion model for simultaneously generating cellular morphology and transcriptomics under drug perturbations.
 
-![Stars](https://img.shields.io/github/stars/prsigma/CellProphet?style=flat-square&color=yellow)
-![Issues](https://img.shields.io/github/issues-raw/prsigma/CellProphet?label=issues&style=flat-square&color=green)
-![License](https://img.shields.io/github/license/prsigma/CellProphet?style=flat-square&color=yellowgreen)
-![Last Commit](https://img.shields.io/github/last-commit/prsigma/CellProphet?label=last%20commit&style=flat-square&color=yellowgreen)
-![Pull Requests](https://img.shields.io/github/issues-pr/prsigma/CellProphet?label=pull%20requests&style=flat-square&color=green)
+![Stars](https://img.shields.io/github/stars/prsigma/MultiVCDiff?style=flat-square&color=yellow)
+![Issues](https://img.shields.io/github/issues-raw/prsigma/MultiVCDiff?label=issues&style=flat-square&color=green)
+![License](https://img.shields.io/github/license/prsigma/MultiVCDiff?style=flat-square&color=yellowgreen)
+![Last Commit](https://img.shields.io/github/last-commit/prsigma/MultiVCDiff?label=last%20commit&style=flat-square&color=yellowgreen)
+![Pull Requests](https://img.shields.io/github/issues-pr/prsigma/MultiVCDiff?label=pull%20requests&style=flat-square&color=green)
 
 ## Overview
 
