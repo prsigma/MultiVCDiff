@@ -1,0 +1,22 @@
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+torchrun --nproc_per_node=4 --master_port=29502 train.py \
+  --use-multimodal \
+  --h5ad-path /data/pr/DiT_AIVCdiff/pr_tutorial/DiT_input_512_one_image_one_rna.h5ad \
+  --image-size 512 \
+  --image-column "merged_image" \
+  --drug-column "compound" \
+  --smiles-column "smiles" \
+  --img-dose-column "concentration" \
+  --model "DiTMultimodal-XL/2" \
+  --global-batch-size 36 \
+  --num-workers 32 \
+  --lr 1e-4 \
+  --epochs 100 \
+  --log-every 10 \
+  --ckpt-every 5000 \
+  --img-loss-weight 1.0 \
+  --rna-loss-weight 1.0 \
+  --results-dir results_multimodal \
+  --use-wandb \
+  --wandb-project "DiT-multimodal-cell-images" \
+  --wandb-run-name "multimodal_with_smiles_fp"
